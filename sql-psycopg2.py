@@ -3,7 +3,7 @@ import psycopg2
 
 # connect to "chinook" database
 
-connection = psycopg2.connect(database="chinook", user="postgres", password="london91")
+connection = psycopg2.connect(database="chinook", user="postgres", password="tiger")
 
 # build a cursor object of the database
 cursor = connection.cursor()
@@ -28,7 +28,7 @@ cursor = connection.cursor()
 cursor.execute('SELECT * FROM "Track" WHERE "Composer" = %s', ["Queen"])
 
 
-# fetch the results (multiple), displays a tuple.
+# fetch the results (multiple), displays a
 results = cursor.fetchall()
 
 # fetch the results (single)
